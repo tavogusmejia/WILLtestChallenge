@@ -9,9 +9,10 @@ function soloNumeros(array) {
   // Debe devolver un arreglo con solo los enteros.
   // Ej: 
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
-
   // Tu código aca:
-
+  newArray=[];
+  array.forEach((value) => Number.isInteger(value) ? newArray.push(value):null);
+return newArray
 }
 
 // No modifiques nada debajo de esta linea //
