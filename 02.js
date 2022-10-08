@@ -10,8 +10,8 @@ function stringMasLarga(strings) {
   // Ej:
   // stringMasLarga(['hi', 'hello', 'ni hao', 'guten tag']); debe retornar 'guten tag'
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
-
   // Tu código aca
+ return strings.reduce((a,b)=> a.length > b.length ? a : b);
 }
 
 // No modifiques nada debajo de esta linea //
