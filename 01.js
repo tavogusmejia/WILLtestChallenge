@@ -12,7 +12,7 @@ function soloNumeros(array) {
   // Tu código aca:
   newArray=[];
   array.forEach((value) => Number.isInteger(value) ? newArray.push(value):null);
-return newArray
+  return newArray
 }
 
 // No modifiques nada debajo de esta linea //

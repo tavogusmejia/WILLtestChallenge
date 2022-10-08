@@ -14,7 +14,9 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
-  
+  var foundName={};
+  amigos.forEach((value) => value.nombre===nombre ? foundName=value : null);
+  return foundName;
 }
 
 // No modifiques nada debajo de esta linea //
